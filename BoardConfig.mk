@@ -31,9 +31,7 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_spes
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 KERNEL_DEFCONFIG := vendor/spes-perf_defconfig
-KERNEL_FULL_LLVM := true
-USE_KERNEL_AOSP_LLVM := true
-
+KERNEL_CUSTOM_LLVM := true
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm6225
 
 BOARD_KERNEL_CMDLINE +=  init.is_dt2w_sensor=1
