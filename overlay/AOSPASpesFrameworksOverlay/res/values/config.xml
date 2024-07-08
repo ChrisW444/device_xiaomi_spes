@@ -19,10 +19,6 @@
     <!-- Fingerprint from stock ROM -->
     <string name="config_stockFingerprint" translatable="false">Redmi/spes_global/spes:13/TKQ1.221114.001/V816.0.3.0.TGCMIXM::user/release-keys</string>
 
-    <!-- Defines the sysfs attribute path used by the device
-         to enable/disable DC dimming. -->
-    <string name="config_deviceDcDimmingSysfsNode">/sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable</string>
-
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
 

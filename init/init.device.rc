@@ -6,6 +6,14 @@ on boot
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/msm_fb_ea_enable
 
+    # HBM
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm
+
+    # FPS Counter
+    chown system graphics /sys/devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps
+    chmod 0660 /sys/devices/platform/soc/5e00000.qcom,mdss_mdp/drm/card0/sde-crtc-0/measured_fps
+
     # Double Tap Sensor
     chown system system /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/double_tap_pressed
     chmod 0660 /sys/devices/platform/soc/4a88000.i2c/i2c-1/1-0038/double_tap_pressed

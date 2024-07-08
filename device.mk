@@ -68,6 +68,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.override_doze_mode=1
 
+# DisplayFeatures
+PRODUCT_PACKAGES += \
+    DisplayFeatures
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
@@ -119,11 +123,10 @@ PRODUCT_PACKAGES += \
 
 # Parts
 PRODUCT_PACKAGES += \
-    SpesParts
+    RefreshRateParts
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/parts/privapp-permissions-spes-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-spes-parts.xml \
-    $(LOCAL_PATH)/parts/init.spesxiaomiparts.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.spesxiaomiparts.rc
+    $(LOCAL_PATH)/parts/privapp-permissions-refresh-rate-parts.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-refresh-rate-parts.xml
 
 # Rootdir / Init files
 PRODUCT_PACKAGES += \
