@@ -1,1 +1,2 @@
+allow system_app sysfs_oled_feature:file rw_file_perms;
 set_prop(system_app, persist_oled_prop)
